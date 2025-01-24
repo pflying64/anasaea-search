@@ -1,12 +1,12 @@
 import streamlit as st
 from openai import OpenAI
 import time
+import httpx
 
-# Initialize OpenAI client
 api_key = st.secrets["OPENAI_API_KEY"]
 client = OpenAI(
-   api_key=api_key,
-   base_url="https://api.openai.com/v1"
+    api_key=api_key,
+    http_client=httpx.Client()
 )
 
 # ANASAEA SEO SEARCH ENGINE Assistant ID
