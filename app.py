@@ -1,7 +1,8 @@
-import streamlit as st
-from openai import OpenAI
 
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+import streamlit as st
+import openai
+
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 ASSISTANT_ID = "asst_P5TO2T0CLrDSbsSspmNWLTw9"
 
