@@ -3,8 +3,8 @@ from openai import OpenAI
 import time
 
 # Initialize OpenAI client
-client = OpenAI()
 
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 # ANASAEA SEO SEARCH ENGINE Assistant ID
 ASSISTANT_ID = "asst_P5TO2T0CLrDSbsSspmNWLTw9"
 
