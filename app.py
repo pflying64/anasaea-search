@@ -1,11 +1,11 @@
-from openai import OpenAI
 import streamlit as st
-from httpx import Timeout
+from openai import OpenAI
+from openai._base_client import FinalRequestOptions
 
-client = OpenAI(
-    api_key=st.secrets["OPENAI_API_KEY"],
-    timeout=Timeout(connect=10, read=30, write=30, pool=30)
-)
+client = OpenAI()
+client.api_key = st.secrets["OPENAI_API_KEY"]
+
+ASSISTANT_ID = "asst_P5TO2T0CLrDSbsSspmNWLTw9"
 
 # ANASAEA SEO SEARCH ENGINE Assistant ID
 ASSISTANT_ID = "asst_P5TO2T0CLrDSbsSspmNWLTw9"
