@@ -1,14 +1,12 @@
 import streamlit as st
 from openai import OpenAI
-from openai._base_client import FinalRequestOptions
 
-client = OpenAI()
-client.api_key = st.secrets["OPENAI_API_KEY"]
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 ASSISTANT_ID = "asst_P5TO2T0CLrDSbsSspmNWLTw9"
 
 # ANASAEA SEO SEARCH ENGINE Assistant ID
-ASSISTANT_ID = "asst_P5TO2T0CLrDSbsSspmNWLTw9"
+
 
 def get_assistant_response(thread, user_message):
    # Add the user message to the thread
