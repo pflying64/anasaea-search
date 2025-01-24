@@ -6,9 +6,7 @@ client = OpenAI()
 client.api_key = st.secrets["OPENAI_API_KEY"]
 
 ASSISTANT_ID = "asst_P5TO2T0CLrDSbsSspmNWLTw9"
-```
 
-Rimuoviamo tutte le opzioni extra e usiamo solo l'essenziale.
 # ANASAEA SEO SEARCH ENGINE Assistant ID
 ASSISTANT_ID = "asst_P5TO2T0CLrDSbsSspmNWLTw9"
 
